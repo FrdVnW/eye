@@ -1,3 +1,90 @@
----
-layout: blog-home
----
+<html>
+	<head>
+		<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="/css/socialicious.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/css/monokai.css">
+		<link href="/blog/rss.xml" rel="alternate" type="application/rss+xml" title="Eye" />
+		<title>Eye</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src='/js/jquery.min.js'></script>
+		<script type="text/javascript" src='/js/jquery.masonry.min.js'></script>
+		<script type="text/javascript" src='/js/jquery.imagesloaded.min.js'></script>
+		<script type="text/javascript" src='/js/highlight.pack.js'></script>
+		<script type="text/javascript">
+			hljs.initHighlightingOnLoad();
+			function applyTiles() {
+				var posts = $('#posts ul');
+				posts.imagesLoaded(function() {
+					$('#posts ul').masonry({ itemSelector : '.post' });;
+				});
+			}
+			$(function() {
+				applyTiles();
+			});
+			$(window).resize(function() {
+				applyTiles();
+			});
+		</script>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<div id='layout'>
+			<div id='heading'>
+	<div id='logo'>
+		<a href='http://localhost:4000'>Fredo's eye</a>
+		<a href='http://localhost:4000' id='logo_docs'></a>
+</div>
+</div>
+<section id="home-hero"></section>
+
+			<div style='clear: both'></div>
+		</div>
+		<div id='content' class="hp">
+			<div id='posts' class="leftblock">
+				<ul>
+					
+						<li class='post'>
+							
+								<a href='/blog/jekyll/photo-gallery/Montreal/'><img class='post-image' src="/images/blog/montreal.jpg" /></a>
+							
+							<div class="postcontent">
+					<a href='/blog/jekyll/photo-gallery/Montreal/'><h1 class='post-title'>Montréal</h1></a>
+
+								<div class='post-content'>Building and view.</div>
+							</div>
+						</li>
+					
+				</ul>
+			</div>
+			<div class="rightblock">
+				<b>What is this all about</b>
+<p>
+  This is a free Jekyll mansonry theme. It was originally on Bitbucket in a private repo but you can now fork it on Github.
+</p>
+<p>
+The color combination used here comes from <a href="http://clrs.cc" target="_blank">CLRS</a>.
+</p>
+<b>Eh, Saigon?</b>
+<p>
+Yep, a city in southern Viet Nam. Did you know Saigon has some of the world's most beautiful cafes?
+  <ul>
+    <li><a href="http://www.nomadicnotes.com/travel-blog/ho-chi-minh-city-cafes/">Nomadic Notes</a></li>
+    <li><a href="http://nomadcapitalist.com/2016/01/11/best-cafes-in-se-asia-for-high-achieving-nomads/">Nomad Capitalist</a></li>
+    <li><a href="http://www.adventurefaktory.com/vietnam-the-ultimate-saigon-cafes-list/">Adventure Faktory</a></li>
+  </ul>
+</p>
+
+<p>
+  A good advice though is probably bringing your headphones with you since Asian music taste evolves around ”Criminal” by Britney Spears and the like.
+</p>
+
+			</div>
+			<div style='clear:both'></div>
+		</div>
+		<div id='footer'>
+			<a href="/about/">About</a> | Fredo's eye - 2018
+		</div>
+	</div>
+</body>
+</html>
