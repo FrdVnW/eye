@@ -1,18 +1,15 @@
+---
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    
-    
-    
+    {% for link in site.links %}{% if link.external %}{% else %} 
     <url>
-        <loc>http://localhost:4000/blog/jekyll/photo-gallery/Montreal/</loc>
-    </url>
+        <loc>{{ site.url }}{{ link.url }}</loc>
+    </url>{% endif %}{% endfor %}
     
+    {% for post in site.posts %}
     <url>
-        <loc>http://localhost:4000/Montreal-Album/</loc>
+        <loc>{{ site.url }}{{ post.url }}</loc>
     </url>
-    
-    <url>
-        <loc>http://localhost:4000/jekyll/photo-gallery/Album-Post/</loc>
-    </url>
-    
+    {% endfor %}
 </urlset>
