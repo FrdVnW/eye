@@ -1,0 +1,56 @@
+
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+permalink: /:categories/:title/
+url: "http://FrdVnW.github.io/eye/"
+full_name: "Fredo's eye"
+first_name: "Fredo's eye"
+last_name: ""
+blog_title: "Eye"
+author_img_name_path: "/images/users/user.jpg"
+copyright_year: "2018"
+google_analytics_code: ""
+aboutme: "Newbie in poutines"
+
+title: "Fredo's eye"
+description: > # this means to ignore newlines until "baseurl:"
+  Some pictures of what I saw in the life,
+  in the nature, in the city
+baseurl: # the subpath of your site, e.g. /blog
+url: "http://localhost:4000" # the base hostname & protocol for your site
+twitter_username: FredVanwin
+github_username:  FrdVnW
+
+owner:
+  # disqus-shortname: theowinterch
+  name: Fred Vanwin
+  email: FrdVnW@pm.me
+  github: FrdVnW
+  twitter: FredVanwin
+  avatar: bio-photo.jpg # 160x160 px image for author byline
+
+# Build settings
+markdown: kramdown
+
+#Jekyll-Photo-Gallery Settings
+exiftag:
+ sources:
+   - images/photography #Set to location of photos
+
+#MiniMagick
+#https://github.com/zroger/jekyll-minimagick
+mini_magick:
+    photography:
+        source: images/photography
+        destination: images/photography/thumbnails
+        resize: "1280x720"
+    headers:
+        source: images/headers
+        destination: images/headers/thumbnails
+        resize: "400x250"
